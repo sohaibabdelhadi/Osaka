@@ -1,0 +1,188 @@
+:root{
+    --mainColor:#ff206e;
+
+}
+
+
+body{
+    
+  
+    background: url(../img/light_dot.jpg);
+    
+}
+.text-mainColor{
+    color: var(--mainColor);
+
+
+}
+
+/* start of header */
+
+.header{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position:center center ;
+    transition: all 1s;
+    
+}
+
+
+
+header .icons{
+    width: 18%;
+
+
+    
+}
+
+.header .icons i{
+    border: solid 1px #222;
+    transition: 1s;
+  
+}
+.header .icons :hover{
+    color: var(--mainColor);
+    border-color: #fff;
+}
+
+.navbar{
+    transition: all 1s;
+}
+
+.navbar .navbar-nav .nav-item:nth-child(1) a {
+    color: var(--mainColor);
+}
+
+/* end of header */
+
+
+/* about section */
+
+.title h2{
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+.title h3{
+    font-size: 2.5rem;
+}
+
+/* end about section */
+
+/* start services */
+.services{
+    background-image: url(../img/dark_dot.jpg);
+    size: cover;
+}
+
+.services .title h2{
+    color: #222;
+}
+
+.services .title h3{
+    color: #fff;
+}
+
+.services-item h4{
+    position: relative;
+}
+.services-item h4:after{
+    content: "";
+    background-color: var(--mainColor);
+    top: 38px;
+    left: 42.5%;
+    width: 15%;
+    height: 1px;
+    position: absolute;
+
+}
+
+
+
+
+
+
+/* end services  */
+
+
+/* start portfolio */
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: var(--mainColor);
+    background-color: transparent;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+    color: #000;
+    font-weight: 700;
+    
+
+}
+
+
+.services i {
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translate(-50%);
+    border: 3px solid white;
+    font-size: 22px;
+}
+
+/* end portfolio */
+
+.btn-up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+}
+
+.options ul{
+    display: flex;
+}
+.options ul li{
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+    margin: 5px;
+    list-style-type:none;
+    cursor: pointer;
+    
+}
+
+
+.options{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 999;
+    display: flex;
+}
+
+.options .fa-cog{
+    border: 1px solid #0dcaf0;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: red;
+}
+.options img{
+    width: 40px;
+    cursor: pointer;
+}
+
+@media (min-width: 756px){
+    header{
+        /* background-image:url(assests/img/dark_dot.jpg); */
+        
+        
+    }
+}
+
